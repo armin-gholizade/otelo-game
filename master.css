@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bord{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box-holder{
+    width: 100%;
+    height: 12.5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5%;
+    height: 100%;
+    background: green;
+    /* border: 1px solid white; */
+
+}
+.box-holder:nth-of-type(odd)>div:nth-of-type(odd){
+    background: rgb(4, 88, 4);
+}
+.box-holder:nth-of-type(even)>div:nth-of-type(even){
+    background: rgb(4, 88, 4);
+}
+.mohre{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+/* .box-holder:nth-of-type(4)>.box:nth-of-type(3)>.mohre{
+    border: 2px solid #ebebeb !important;
+    box-shadow:  0px 0px 11px 8px rgb(255, 255, 255);
+} */
+.box-holder:nth-of-type(4)>.box:nth-of-type(4)>.mohre{
+    background: white;
+    box-shadow: inset 0px 0px 13px -3px black;
+}
+.box-holder:nth-of-type(4)>.box:nth-of-type(5)>.mohre{
+    background: black;
+    box-shadow: inset 0px 0px 16px -3px rgb(161 151 151);
+}
+.box-holder:nth-of-type(5)>.box:nth-of-type(4)>.mohre{
+    background: black;
+    box-shadow: inset 0px 0px 16px -3px rgb(161 151 151);
+}
+.box-holder:nth-of-type(5)>.box:nth-of-type(5)>.mohre{
+    background: white;
+    box-shadow: inset 0px 0px 13px -3px black;
+
+}
